@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_demo_type_rank
+    - node.type.demo_type
+id: node.demo_type.field_demo_type_rank
+field_name: field_demo_type_rank
+entity_type: node
+bundle: demo_type
+label: 'Demo Type Rank'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

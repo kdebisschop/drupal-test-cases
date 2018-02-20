@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_demo_type_article
+    - node.type.article
+    - node.type.demo_type
+id: node.demo_type.field_demo_type_article
+field_name: field_demo_type_article
+entity_type: node
+bundle: demo_type
+label: 'Demo Type Article'
+description: 'An Article Reference'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: demo_type_article_node
+  handler_settings:
+    target_bundles:
+      article: article
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

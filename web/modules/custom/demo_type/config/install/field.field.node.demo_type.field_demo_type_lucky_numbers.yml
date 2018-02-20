@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_demo_type_lucky_numbers
+    - node.type.demo_type
+  module:
+    - options
+id: node.demo_type.field_demo_type_lucky_numbers
+field_name: field_demo_type_lucky_numbers
+entity_type: node
+bundle: demo_type
+label: 'Demo Type Lucky Numbers'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

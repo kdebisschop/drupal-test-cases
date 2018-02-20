@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.demo_type.field_demo_type_article
+    - node.type.demo_type
+  module:
+    - user
+id: node.demo_type.teaser
+targetEntityType: node
+bundle: demo_type
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_demo_type_article: true
